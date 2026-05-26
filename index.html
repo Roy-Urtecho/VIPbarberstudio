@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estudio Barber — Maestría en cada corte</title>
+  <meta name="description" content="Estudio Barber: barbería premium en Honduras. Cortes de precisión, afeitado con navaja, mascarillas faciales y membresías exclusivas. Maestría en cada corte.">
+  <meta name="keywords" content="barbería, barbershop, corte de cabello, fade, barba, Honduras, Estudio Barber">
+  <meta name="author" content="Estudio Barber">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Favicon (gold EB monogram) -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='80' fill='%23C9A84C'>EB</text></svg>">
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+
+  <!-- ═══════════════════════════════════
+       NAVBAR
+       ═══════════════════════════════════ -->
+  <nav class="navbar" id="navbar">
+    <a href="#hero" class="navbar-logo">EB</a>
+    <ul class="navbar-links" id="navLinks">
+      <li><a href="#servicios">Servicios</a></li>
+      <li><a href="#barberos">Barberos</a></li>
+      <li><a href="#membresias">Membresías</a></li>
+      <li><a href="#reservas">Reservas</a></li>
+      <li><a href="#reservas" class="nav-cta">Agendar</a></li>
+    </ul>
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú de navegación">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <!-- ═══════════════════════════════════
+       HERO SECTION
+       ═══════════════════════════════════ -->
+  <section id="hero">
+    <div class="hero-video-wrap">
+      <video autoplay muted loop playsinline poster="">
+        <source src="https://videos.pexels.com/video-files/9737935/9737935-uhd_2560_1440_24fps.mp4" type="video/mp4">
+        <source src="https://videos.pexels.com/video-files/9737935/9737935-hd_1920_1080_24fps.mp4" type="video/mp4">
+        <source src="https://videos.pexels.com/video-files/9737935/9737935-sd_960_540_24fps.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Barbería Premium
+      </div>
+      <h1 class="hero-title">
+        Estudio Barber
+        <span class="gold-text">Maestría en cada corte</span>
+      </h1>
+      <p class="hero-subtitle">Donde la tradición artesanal se encuentra con la sofisticación moderna. Una experiencia de barbería que trasciende lo ordinario.</p>
+      <div class="hero-cta-group">
+        <a href="#reservas" class="btn-primary">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          Agendar Cita
+        </a>
+        <a href="#servicios" class="btn-outline">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><polyline points="19 12 12 19 5 12"/></svg>
+          Explorar
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-scroll">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════
+       SERVICIOS
+       ═══════════════════════════════════ -->
+  <section id="servicios">
+    <div class="texture-overlay"></div>
+    <canvas class="particles-canvas"></canvas>
+
+    <div class="section-header reveal">
+      <span class="section-tag">Lo que ofrecemos</span>
+      <h2>Nuestros Servicios</h2>
+      <p>Cada servicio es una obra de arte. Precisión, detalle y un acabado impecable en cada visita.</p>
+    </div>
+
+    <div class="servicios-grid">
+      <!-- Corte Normal -->
+      <div class="servicio-card reveal stagger-1">
+        <div class="servicio-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><line x1="20" y1="4" x2="8.12" y2="15.88"/><line x1="14.47" y1="14.48" x2="20" y2="20"/><line x1="8.12" y1="8.12" x2="12" y2="12"/>
+          </svg>
+        </div>
+        <h3>Corte Normal</h3>
+        <p class="servicio-desc">Corte clásico con acabado profesional. Lavado e hidratación incluida.</p>
+        <div class="servicio-price">100 <small>LPS</small></div>
+      </div>
+
+      <!-- Corte con Navaja -->
+      <div class="servicio-card reveal stagger-2">
+        <div class="servicio-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M7 2L16 2L20 6L20 22L4 22L4 6L7 2Z"/><line x1="7" y1="2" x2="7" y2="8"/><line x1="4" y1="8" x2="20" y2="8"/>
+          </svg>
+        </div>
+        <h3>Corte con Navaja</h3>
+        <p class="servicio-desc">Precisión artesanal con navaja de afeitar tradicional. Para un acabado auténtico.</p>
+        <div class="servicio-price">120 <small>LPS</small></div>
+      </div>
+
+      <!-- Cabello y Barba -->
+      <div class="servicio-card reveal stagger-3">
+        <div class="servicio-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/>
+          </svg>
+        </div>
+        <h3>Cabello y Barba</h3>
+        <p class="servicio-desc">El paquete completo. Corte de cabello premium más perfilado y diseño de barba.</p>
+        <div class="servicio-price">150 <small>LPS</small></div>
+      </div>
+
+      <!-- Mascarilla Facial -->
+      <div class="servicio-card reveal stagger-4">
+        <div class="servicio-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/>
+          </svg>
+        </div>
+        <h3>Mascarilla Facial</h3>
+        <p class="servicio-desc">Tratamiento facial rejuvenecedor con productos premium. Limpieza profunda y exfoliación.</p>
+        <div class="servicio-price">400 <small>LPS</small></div>
+      </div>
+
+      <!-- Limpieza + Corte -->
+      <div class="servicio-card reveal stagger-5">
+        <div class="servicio-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+          </svg>
+        </div>
+        <h3>Limpieza + Corte</h3>
+        <p class="servicio-desc">Limpieza facial profunda combinada con corte de cabello premium. La experiencia completa.</p>
+        <div class="servicio-price">270 <small>LPS</small></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ornament Divider -->
+  <div class="section-divider" style="background: var(--black);">
+    <div class="line"></div>
+    <div class="diamond"></div>
+    <div class="line"></div>
+  </div>
+
+  <!-- ═══════════════════════════════════
+       BARBEROS
+       ═══════════════════════════════════ -->
+  <section id="barberos">
+    <canvas class="particles-canvas"></canvas>
+
+    <div class="section-header reveal">
+      <span class="section-tag">El Equipo</span>
+      <h2>Nuestros Maestros Barberos</h2>
+      <p>Artistas del estilo con años de experiencia y pasión por el oficio.</p>
+    </div>
+
+    <div class="barberos-grid">
+      <!-- Fredy -->
+      <div class="barbero-card reveal stagger-1">
+        <div class="barbero-img-wrap">
+          <div class="barbero-placeholder">F</div>
+        </div>
+        <h3>Fredy</h3>
+        <p class="barbero-specialty">Especialista en Fade & Urban</p>
+        <p class="barbero-bio">Maestro en degradados modernos y estilos urbanos. Cada corte es una declaración de estilo personal.</p>
+      </div>
+
+      <!-- Nelson -->
+      <div class="barbero-card reveal stagger-2">
+        <div class="barbero-img-wrap">
+          <div class="barbero-placeholder">N</div>
+        </div>
+        <h3>Nelson</h3>
+        <p class="barbero-specialty">Corte Clásico & Navaja</p>
+        <p class="barbero-bio">El arte del corte clásico llevado a su máxima expresión. Técnica depurada con navaja tradicional.</p>
+      </div>
+
+      <!-- Steven -->
+      <div class="barbero-card reveal stagger-3">
+        <div class="barbero-img-wrap">
+          <div class="barbero-placeholder">S</div>
+        </div>
+        <h3>Steven</h3>
+        <p class="barbero-specialty">Estilismo & Texturas</p>
+        <p class="barbero-bio">Vanguardia en estilismo y trabajo de texturas. Transforma tu imagen con técnicas innovadoras.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ornament Divider -->
+  <div class="section-divider" style="background: var(--black-soft);">
+    <div class="line"></div>
+    <div class="diamond"></div>
+    <div class="line"></div>
+  </div>
+
+  <!-- ═══════════════════════════════════
+       MEMBRESÍAS
+       ═══════════════════════════════════ -->
+  <section id="membresias">
+    <div class="texture-overlay"></div>
+    <canvas class="particles-canvas"></canvas>
+
+    <div class="section-header reveal">
+      <span class="section-tag">Planes Exclusivos</span>
+      <h2>Membresías</h2>
+      <p>Invierte en tu imagen. Beneficios exclusivos diseñados para caballeros que exigen lo mejor.</p>
+    </div>
+
+    <div class="membresias-grid">
+      <!-- Silver -->
+      <div class="membresia-card reveal stagger-1">
+        <h3 class="membresia-name">Silver</h3>
+        <div class="membresia-price">450 <small>LPS</small></div>
+        <p class="membresia-period">por mes</p>
+        <ul class="membresia-features">
+          <li><span class="check">✦</span> 4 cortes normales al mes</li>
+          <li><span class="check">✦</span> Asesoría de imagen personal</li>
+          <li><span class="check">✦</span> 10% descuento en productos</li>
+          <li><span class="check">✦</span> Reserva prioritaria en línea</li>
+        </ul>
+      </div>
+
+      <!-- Gold (Featured) -->
+      <div class="membresia-card featured reveal stagger-2">
+        <div class="featured-badge">★ Recomendado</div>
+        <h3 class="membresia-name">Gold</h3>
+        <div class="membresia-price">700 <small>LPS</small></div>
+        <p class="membresia-period">por mes</p>
+        <ul class="membresia-features">
+          <li><span class="check">✦</span> Cortes ilimitados</li>
+          <li><span class="check">✦</span> 1 mascarilla facial mensual</li>
+          <li><span class="check">✦</span> Prioridad en reservaciones</li>
+          <li><span class="check">✦</span> Asesoría de imagen premium</li>
+          <li><span class="check">✦</span> 15% descuento en productos</li>
+        </ul>
+      </div>
+
+      <!-- Platinum -->
+      <div class="membresia-card reveal stagger-3">
+        <h3 class="membresia-name">Platinum</h3>
+        <div class="membresia-price">1200 <small>LPS</small></div>
+        <p class="membresia-period">por mes</p>
+        <ul class="membresia-features">
+          <li><span class="check">✦</span> Todo lo incluido en Gold</li>
+          <li><span class="check">✦</span> Tratamiento spa completo</li>
+          <li><span class="check">✦</span> Barba ilimitada</li>
+          <li><span class="check">✦</span> Barbero personal asignado</li>
+          <li><span class="check">✦</span> Acceso a eventos exclusivos</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ornament Divider -->
+  <div class="section-divider" style="background: var(--black);">
+    <div class="line"></div>
+    <div class="diamond"></div>
+    <div class="line"></div>
+  </div>
+
+  <!-- ═══════════════════════════════════
+       RESERVAS
+       ═══════════════════════════════════ -->
+  <section id="reservas">
+    <div class="texture-overlay"></div>
+
+    <div class="section-header reveal">
+      <span class="section-tag">Tu próxima cita</span>
+      <h2>Reserva tu Espacio</h2>
+      <p>Selecciona tu barbero, servicio y horario preferido. Te confirmamos al instante.</p>
+    </div>
+
+    <div class="reservas-container reveal">
+      <form class="reservas-form" id="reserva-form">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="barbero">Barbero</label>
+            <select id="barbero" name="barbero" required>
+              <option value="" disabled selected>Seleccionar barbero</option>
+              <option value="fredy">Fredy — Fade & Urban</option>
+              <option value="nelson">Nelson — Clásico & Navaja</option>
+              <option value="steven">Steven — Estilismo & Texturas</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="servicio">Servicio</label>
+            <select id="servicio" name="servicio" required>
+              <option value="" disabled selected>Seleccionar servicio</option>
+              <option value="corte-normal">Corte Normal — 100 LPS</option>
+              <option value="corte-navaja">Corte con Navaja — 120 LPS</option>
+              <option value="cabello-barba">Cabello y Barba — 150 LPS</option>
+              <option value="mascarilla">Mascarilla Facial — 400 LPS</option>
+              <option value="limpieza-corte">Limpieza + Corte — 270 LPS</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="fecha">Fecha</label>
+            <input type="date" id="fecha" name="fecha" required>
+          </div>
+          <div class="form-group">
+            <label for="hora">Hora</label>
+            <select id="hora" name="hora" required>
+              <option value="" disabled selected>Seleccionar hora</option>
+              <option value="08:00">8:00 AM</option>
+              <option value="08:30">8:30 AM</option>
+              <option value="09:00">9:00 AM</option>
+              <option value="09:30">9:30 AM</option>
+              <option value="10:00">10:00 AM</option>
+              <option value="10:30">10:30 AM</option>
+              <option value="11:00">11:00 AM</option>
+              <option value="11:30">11:30 AM</option>
+              <option value="12:00">12:00 PM</option>
+              <option value="12:30">12:30 PM</option>
+              <option value="13:00">1:00 PM</option>
+              <option value="13:30">1:30 PM</option>
+              <option value="14:00">2:00 PM</option>
+              <option value="14:30">2:30 PM</option>
+              <option value="15:00">3:00 PM</option>
+              <option value="15:30">3:30 PM</option>
+              <option value="16:00">4:00 PM</option>
+              <option value="16:30">4:30 PM</option>
+              <option value="17:00">5:00 PM</option>
+              <option value="17:30">5:30 PM</option>
+              <option value="18:00">6:00 PM</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="membresia">Membresía (Opcional)</label>
+            <select id="membresia" name="membresia">
+              <option value="ninguna" selected>Ninguna (Solo Cita Individual)</option>
+              <option value="silver">Membresía Silver — 450 LPS/mes</option>
+              <option value="gold">Membresía Gold — 700 LPS/mes</option>
+              <option value="platinum">Membresía Platinum — 1200 LPS/mes</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="whatsapp">Teléfono / WhatsApp</label>
+            <input type="tel" id="whatsapp" name="whatsapp" placeholder="ej. 9532-6609" pattern="[0-9]{4}-[0-9]{4}|[0-9]{8}" required>
+          </div>
+        </div>
+
+        <button type="submit" class="btn-submit">
+          Confirmar Reservación
+        </button>
+      </form>
+
+      <div class="reservas-phone">
+        <p>¿Prefieres reservar por teléfono?</p>
+        <span class="phone-number">CITA PREVIA: 9532-6609</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════
+       FOOTER
+       ═══════════════════════════════════ -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">Estudio Barber</div>
+        <p>Donde la tradición artesanal se encuentra con la sofisticación moderna. Más que una barbería, una experiencia.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Horarios</h4>
+        <ul>
+          <li>
+            <span class="icon">◆</span>
+            Lun – Sáb: 8:00 – 19:00
+          </li>
+          <li>
+            <span class="icon">◆</span>
+            Dom: 8:00 – 14:00
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Ubicación</h4>
+        <ul>
+          <li>
+            <span class="icon">◆</span>
+            Barrio Arriba
+          </li>
+          <li>
+            <span class="icon">◆</span>
+            Calle que conduce a Golosinas July
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contacto</h4>
+        <ul>
+          <li>
+            <span class="icon">◆</span>
+            Tel: 9532-6609
+          </li>
+          <li>
+            <span class="icon">◆</span>
+            Cita Previa Recomendada
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 <span class="gold">Estudio Barber</span>. Todos los derechos reservados.</p>
+      <p>Maestría en cada corte</p>
+    </div>
+  </footer>
+
+  <!-- Toast Notification -->
+  <div class="toast" id="toast">
+    <span class="toast-icon">✓</span>
+    <span class="toast-text">¡Cita agendada exitosamente!</span>
+  </div>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+</html>
